@@ -30,6 +30,9 @@ body
      display: flex;
      justify-content: center;
      align-items: center;
+     background-image: url(../images/bg-desktop.png);
+     background-repeat: no-repeat;
+     background-position: bottom;
  }
  .main .fylo
  {
@@ -72,14 +75,14 @@ body
     border-radius: 1rem;
     width: 500px;
 }
-.main .fylo .box-data p
+.main .fylo .box-data h1
 {
     color: var(--Pale-Blue);
     margin-bottom: .6rem ;
     font-weight: 400;
     font-size: .8rem;
 }
-.main .fylo .box-data p span
+.main .fylo .box-data h1 span
 {
     font-weight: 700;
     color: var(--Pale-Blue);
@@ -165,6 +168,10 @@ body
 }
 @media (max-width:767px) 
 {
+    .main .container
+    {
+        background-image: url(../images/bg-mobile.png);
+    }
     .main .fylo
     {
         flex-direction: column;
